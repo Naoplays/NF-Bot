@@ -1,9 +1,13 @@
-let handler = async (m, { conn, usedPrefix, isOwner }) => {
-let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:Sisked ⭐;;\nFN:Sisked ⭐\nORG:Sisked ⭐\nTITLE:\nitem1.TEL;waid=584123989549:584123989549\nitem1.X-ABLabel:Sisked ⭐\nX-WA-BIZ-DESCRIPTION:\nX-WA-BIZ-NAME:Sisked ⭐\nEND:VCARD`
-await conn.sendMessage(m.chat, { contacts: { displayName: 'おDanịel.xyz⁩', contacts: [{ vcard }] }}, {quoted: m})
+function handler(m) {
+  const data = global.owner.filter(([id, isCreator]) => id && isCreator)
+  this.sendContact(m.chat, data.map(([id, name]) => [id, name]), estilo, { contextInfo: { externalAdReply: { showAdAttribution: true }}})
+
+
 }
-handler.help = ['owner']
-handler.tags = ['main']
-handler.command = ['owner', 'creator', 'creador', 'dueño'] 
+
+handler.help = ['creador']
+handler.tags = ['info']
+handler.command = ['creador', 'creator', 'owner', 'propietario', 'dueño']
+
 
 export default handler
