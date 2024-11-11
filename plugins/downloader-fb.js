@@ -31,6 +31,6 @@ let handler = async (m, { text, conn, args, usedPrefix, command }) => {
 };
 
 handler.tags = ['downloader']
-handler.help = ['facebook < Busqueda | link >']
+handler.help = ['facebook < Enlace >']
 handler.command = ['facebook', 'fb', 'fbdl'];
 export default handler;
