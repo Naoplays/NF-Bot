@@ -5,13 +5,12 @@ let a = ps.getRandom()
 let b
 do b = ps.getRandom()
 while (b === a)
-m.reply(`*${toM(a)},* _le tocó donar una sala estás de mala suerte hoy bájate con todo lo que tengas_😾💥
-*_SISKED BOT - MD_* 🌟`, null, {
+m.reply(`𝘋𝘰𝘯𝘢𝘥𝘰𝘳 𝘢𝘭𝘦𝘢𝘵𝘰𝘳𝘪𝘰 𝘦𝘭𝘦𝘨𝘪𝘥𝘰 𝘦𝘴: *${toM(a)},*\n𝑺𝑰𝑺𝑲𝑬𝑫 𝑩𝑶𝑻 🚩`, null, {
 mentions: [a, b]
 })}
 handler.help = ['donarsala']
 handler.tags = ['group']
-handler.command = ['donarsala']
+handler.command = ['donarsala', 'sala']
 handler.group = true
 handler.admin = true
 export default handler
