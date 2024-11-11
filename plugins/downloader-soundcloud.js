@@ -37,6 +37,5 @@ fs.unlinkSync(mp3)
 handler.help = ['soundcloud *<búsqueda>*']
 handler.tags = ['downloader']
 handler.command = ['soundcloud', 'sound']
-handler.register = true
 handler.limit = 3
 export default handler
