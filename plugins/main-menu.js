@@ -43,7 +43,7 @@ const defaultMenu = {
 
 \t\t\t𝐒 𝐈 𝐒 𝐊 𝐄 𝐃 - 𝐌 𝐄 𝐍 𝐔́
 `.trimStart(),
-header: '┏━━━━━━•「 *%category* 」',
+header: '┏━━━━━━• 🏴「 *%category* 」🏳️',
 body: '┃━ 〆 *%cmd*\n',
 footer: '┗━━━━━━━• 🚩\n',
 after: '',
