@@ -36,13 +36,6 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       chat.modoadmin = isEnable          
       break
 
-      case 'chatbot':
-      case 'autosimi':
-      case 'autosimsimi':
-      isUser = true
-      user.chatbot = isEnable
-      break
-
       case 'detect': case 'avisos':
       if (!m.isGroup) {
       if (!isOwner) {
