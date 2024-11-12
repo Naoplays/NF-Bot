@@ -28,7 +28,7 @@ let tags = {
 
 const defaultMenu = {
   before: `
-*꒷꒦꒷꒷꒦꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒷꒦꒷꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷*
+*─ׄ─ׅ─⭒─ׄ─ׄ─⭒─ׅ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׄ─*
 
 “ hello *%name*, Cómo se encuentra el día de hoy? ”
 
