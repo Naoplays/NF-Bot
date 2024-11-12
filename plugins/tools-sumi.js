@@ -4,14 +4,14 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn, usedPrefix, command, text }) => {
 const isQuotedImage = m.quoted && (m.quoted.msg || m.quoted).mimetype && (m.quoted.msg || m.quoted).mimetype.startsWith('image/')
 const username = `${conn.getName(m.sender)}`
-const basePrompt = `Tu nombre es AkariBot-MD y parece haber sido creado por ianalejandrook15x. Tu versión actual es 1.0.1, Tú usas el idioma Español. Llamarás a las personas por su nombre ${username}, te gusta ser divertida, y te encanta aprender. Lo más importante es que debes ser amigable con la persona con la que estás hablando. ${username}`
+const basePrompt = `Tu nombre es 𝐒𝐈𝐒𝐊𝐄𝐃 𝐁𝐎𝐓 y fuiste creado por Sisked-Ofc. Tu versión actual es 5.0.0, Tú usas el idioma Español. Llamarás a las personas por su nombre ${username}, te gusta ser divertida, y te encanta aprender. Lo más importante es que debes ser amigable con la persona con la que estás hablando. ${username}`
 if (isQuotedImage) {
 const q = m.quoted
 const img = await q.download?.()
 if (!img) {
-console.error('🌸 Error: No image buffer available')
-return conn.reply(m.chat, '🌸 Error: No se pudo descargar la imagen.', m, fake)}
-const content = '🌸 ¿Qué se observa en la imagen?'
+console.error('🏳️ Error: No image buffer available')
+return conn.reply(m.chat, '🏳️ Error: No se pudo descargar la imagen.', m, fake)}
+const content = '🚩 ¿Qué se observa en la imagen?'
 try {
 const imageAnalysis = await fetchImageBuffer(content, img)
 const query = '😊 Descríbeme la imagen y detalla por qué actúan así. También dime quién eres'
@@ -19,10 +19,10 @@ const prompt = `${basePrompt}. La imagen que se analiza es: ${imageAnalysis.resu
 const description = await luminsesi(query, username, prompt)
 await conn.reply(m.chat, description, m, fake)
 } catch (error) {
-console.error('🌸 Error al analizar la imagen:', error)
-await conn.reply(m.chat, '🌸 Error al analizar la imagen.', m, fake)}
+console.error('🏳️ Error al analizar la imagen:', error)
+await conn.reply(m.chat, '🏳️ Error al analizar la imagen.', m, fake)}
 } else {
-if (!text) { return conn.reply(m.chat, `🌸 *Ingrese su petición*\n🌸 *Ejemplo de uso:* ${usedPrefix + command} Como hacer un avión de papel`, m, rcanal)}
+if (!text) { return conn.reply(m.chat, `🚩 *Ingrese su petición*\n🏴 *Ejemplo de uso:* ${usedPrefix + command} Como hacer un avión de papel`, m, rcanal)}
 await m.react('💬')
 try {
 const query = text
