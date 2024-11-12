@@ -1,12 +1,13 @@
 let handler = async (m, { conn, text, isROwner, isOwner }) => {
+m.react('🙌🏻')
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 
 if (text) {
 global.db.data.chats[m.chat].sWelcome = text
-conn.reply(m.chat, '_*LA BIENVENIDA DEL GRUPO HA SIDO CONFIGURADA*_', fkontak, m)
+conn.reply(m.chat, '𝘽𝙄𝙀𝙉𝙑𝙀𝙉𝙄𝘿𝘼 𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝘿𝘼 𝘾𝙊𝙍𝙍𝙀𝘾𝙏𝘼𝙈𝙀𝙉𝙏𝙀  🚩', fkontak, m)
 
 } else {
-    conn.reply(m.chat, `*_ESCRIBE EL MENSAJE DE BIENVENIDA_*\n*_OPCIONAL PUEDE USAR LO QUE ESTA CON "@" PARA AGREGAR MÁS INFORMACIÓN:_*\n\n*⚡ @user (Mención al usuario(a))*\n*⚡ @group (Nombre de grupo)*\n*⚡ @desc (Description de grupo)*\n\n*RECUERDE QUE LOS "@" SON OPCIONALES*`, m)
+    conn.reply(m.chat, `𝙍𝙀𝘿𝘼𝘾𝙏𝘼 𝙀𝙇 𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝘿𝙀 𝘽𝙄𝙀𝙉𝙑𝙀𝙉𝙄𝘿𝘼\n𝙊𝙋𝘾𝙄𝙊𝙉𝘼𝙇 𝙋𝙐𝙀𝘿𝙀 𝙐𝙎𝘼𝙍 𝙇𝙊 𝙌𝙐𝙀 𝙀𝙎𝙏𝘼 𝘾𝙊𝙉 "@" 𝙋𝘼𝙍𝘼 𝘼𝙂𝙍𝙀𝙂𝘼𝙍 𝙈𝘼́𝙎 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊́𝙉:\n\n🚩 @𝘶𝘴𝘦𝘳 *(𝘔𝘦𝘯𝘤𝘪𝘰́𝘯 𝘢𝘭 𝘶𝘴𝘶𝘢𝘳𝘪𝘰(𝘢))*\n🏳️ @𝘨𝘳𝘰𝘶𝘱 *(𝘕𝘰𝘮𝘣𝘳𝘦 𝘥𝘦 𝘨𝘳𝘶𝘱𝘰)*\n🏴 @𝘥𝘦𝘴𝘤 *(𝘋𝘦𝘴𝘤𝘳𝘪𝘱𝘤𝘪𝘰́𝘯 𝘥𝘦 𝘨𝘳𝘶𝘱𝘰)*\n\n𝘙𝘌𝘊𝘜𝘌𝘙𝘋𝘌 𝘘𝘜𝘌 𝘓𝘖𝘚 "@" 𝘚𝘖𝘕 𝘖𝘗𝘊𝘐𝘖𝘕𝘈𝘓𝘌𝘚 ⭐`, m)
 }
 }
 handler.help = ['setwelcome @user + texto']
