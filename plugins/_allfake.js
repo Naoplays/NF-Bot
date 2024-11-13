@@ -66,3 +66,12 @@ renderLargerThumbnail: false
 },},}
 	
 }
+
+global.icono = [ 
+'https://telegra.ph/file/e4cae86be4d97aabcd77c.jpg',
+'https://telegra.ph/file/e4cae86be4d97aabcd77c.jpg',
+'https://telegra.ph/file/e4cae86be4d97aabcd77c.jpg',
+'https://telegra.ph/file/e4cae86be4d97aabcd77c.jpg',
+'https://telegra.ph/file/e4cae86be4d97aabcd77c.jpg',
+'https://telegra.ph/file/e4cae86be4d97aabcd77c.jpg',
+].getRandom()
