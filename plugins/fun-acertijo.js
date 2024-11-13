@@ -17,7 +17,7 @@ let handler = async (m, { conn }) => {
         response: acertijo.response,
         points: 10, // Cambia los puntos si prefieres
         timer: setTimeout(() => {
-            conn.sendMessage(m.chat, { text: '🕐 Tiempo agotado! El acertijo ha Terminado.\n*Respuesta:* ${json.response}'});
+            conn.sendMessage(m.chat, { text: '🕐 Tiempo agotado! El acertijo ha Terminado.\n*Respuesta:* ${json.response}', conn.tekateki[id][0]});
             delete tekateki[m.chat];
         }, 60000) // Tiempo límite de 1 minuto (60000 ms)
     };
