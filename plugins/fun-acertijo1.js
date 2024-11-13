@@ -10,7 +10,7 @@ let handler = async (m, { conn }) => {
     let acertijo = acertijos[Math.floor(Math.random() * acertijos.length)];
     
     // Inicia un nuevo acertijo para el chat
-    let mensajeEnviado = await m.reply(`Aquí tienes un acertijo:\n\n${acertijo.question}`);
+    let mensajeEnviado = await m.reply(`⭐ Acertijo::\n\n${acertijo.question}\n\n⏰ *Tiempo:* _60.00 Segundos_\n🎁 *Premió: +10* Centavos 🪙`);
     tekateki[m.chat] = {
         id: mensajeEnviado.id,  // Almacena el ID del mensaje de acertijo
         question: acertijo.question,
@@ -19,7 +19,7 @@ let handler = async (m, { conn }) => {
         timer: setTimeout(() => {
             conn.sendMessage(
                 m.chat, 
-                { text: `⏳ Tiempo agotado! El acertijo ha sido cancelado. La respuesta correcta era: *${acertijo.response}*` }
+                { text: `🕐 Tiempo agotado! El acertijo ha Terminado.\n*Respuesta:* *${acertijo.response}*` }
             );
             delete tekateki[m.chat];
         }, 60000) // Tiempo límite de 1 minuto (60000 ms)
@@ -58,7 +58,7 @@ handler.before = async function(m) {
         else if (similarity(respuestaUsuario, respuestaCorrecta) >= threshold) {
             m.reply('Casi lo logras!');
         } else {
-            m.reply('Respuesta incorrecta!');
+            m.reply('*_Respuesta incorrecta!_* ❌');
         }
     } 
     // Si no hay acertijo activo pero el mensaje es una respuesta a un acertijo finalizado
