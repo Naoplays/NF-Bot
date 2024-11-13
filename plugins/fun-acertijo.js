@@ -2,7 +2,7 @@ import fs from 'fs';
 import similarity from 'similarity';
 const threshold = 0.72;
 
-let acertijos = JSON.parse(fs.readFileSync('./src/game/acertijos.json', 'utf-8'));
+let acertijos = JSON.parse(fs.readFileSync('./acertijos.json', 'utf-8'));
 let tekateki = {}; // Almacena los acertijos activos por chat
 
 // Comando para enviar un acertijo
@@ -10,7 +10,7 @@ let handler = async (m, { conn }) => {
     let acertijo = acertijos[Math.floor(Math.random() * acertijos.length)];
     
     // Inicia un nuevo acertijo para el chat
-    let mensajeEnviado = await m.reply(`⭐ Acertijo::\n\n${acertijo.question}\n\n⏰ *Tiempo:* _60.00 Segundos_\n🎁 *Premió: +10* Centavos 🪙`);
+    let mensajeEnviado = await m.reply(`Aquí tienes un acertijo:\n\n${acertijo.question}`);
     tekateki[m.chat] = {
         id: mensajeEnviado.id,  // Almacena el ID del mensaje de acertijo
         question: acertijo.question,
@@ -19,16 +19,14 @@ let handler = async (m, { conn }) => {
         timer: setTimeout(() => {
             conn.sendMessage(
                 m.chat, 
-                { text: `🕐 Tiempo agotado! El acertijo ha Terminado. *Respuesta:* *${acertijo.response}*` }
+                { text: `⏳ Tiempo agotado! El acertijo ha sido cancelado. La respuesta correcta era: *${acertijo.response}*` }
             );
             delete tekateki[m.chat];
         }, 60000) // Tiempo límite de 1 minuto (60000 ms)
     };
 };
 
-handler.help = ['acertijo'] 
-handler.tags = ['fun'] 
-handler.command = ['acertijo1'];
+handler.command = ['acertijo'];
 
 // Verificación de respuesta
 handler.before = async function(m) {
@@ -58,7 +56,7 @@ handler.before = async function(m) {
         else if (similarity(respuestaUsuario, respuestaCorrecta) >= threshold) {
             m.reply('Casi lo logras!');
         } else {
-            m.reply('*_Respuesta incorrecta!_* ❌');
+            m.reply('Respuesta incorrecta!');
         }
     } 
     // Si no hay acertijo activo pero el mensaje es una respuesta a un acertijo finalizado
