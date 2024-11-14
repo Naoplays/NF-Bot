@@ -10,7 +10,7 @@ let handler = async (m, { conn }) => {
     let acertijo = acertijos[Math.floor(Math.random() * acertijos.length)];
     
     // Inicia un nuevo acertijo para el chat
-    let mensajeEnviado = await m.reply(`⭐ _Acertijo:_\n\n${acertijo.question}\n🕐 *_Tiempo:* 60.00 Segundos_\n*🎁 _*Premio:* 10 Centavos_ 🪙`);
+    let mensajeEnviado = await m.reply(`⭐ Acertijo:\n\n${acertijo.question}\n\n🕐 *Tiempo:* 60.00 Segundos\n*🎁 *Premio:* 10 Centavos 🪙`);
     tekateki[m.chat] = {
         id: mensajeEnviado.id,  // Almacena el ID del mensaje de acertijo
         question: acertijo.question,
