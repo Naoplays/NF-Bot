@@ -19,7 +19,7 @@ let handler = async (m, { conn }) => {
         timer: setTimeout(() => {
             conn.sendMessage(
                 m.chat, 
-                { text: `⏰ *Tiempo Finalizado.\n_Respuesta:_ *${acertijo.response}*` }
+                { text: `⏰ Tiempo Finalizado.\n_Respuesta:_ *${acertijo.response}*` }
             );
             delete tekateki[m.chat];
         }, 60000) // Tiempo límite de 1 minuto (60000 ms)
