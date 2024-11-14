@@ -10,7 +10,7 @@ let handler = async (m, { conn }) => {
     let acertijo = acertijos[Math.floor(Math.random() * acertijos.length)];
     
     // Inicia un nuevo acertijo para el chat
-    let mensajeEnviado = await m.reply(`⭐ Acertijo:\n\n${acertijo.question}\n\n🕐 *Tiempo:* 60.00 Segundos\n*🎁 *Premio:* 10 Centavos 🪙`);
+    let mensajeEnviado = await m.reply(`⭐ Acertijo:\n\n${acertijo.question}\n\n🕐 *Tiempo:* 60.00 Segundos\n🎁 *Premio:* 10 Centavos 🪙`);
     tekateki[m.chat] = {
         id: mensajeEnviado.id,  // Almacena el ID del mensaje de acertijo
         question: acertijo.question,
@@ -19,14 +19,16 @@ let handler = async (m, { conn }) => {
         timer: setTimeout(() => {
             conn.sendMessage(
                 m.chat, 
-                { text: `⏰ *Tiempo Finalizado.*\n_Respuesta:_* *${acertijo.response}*` }
+                { text: `⏰ *Tiempo Finalizado.\n_Respuesta:_ *${acertijo.response}*` }
             );
             delete tekateki[m.chat];
         }, 60000) // Tiempo límite de 1 minuto (60000 ms)
     };
 };
 
-handler.command = ['acertijo'];
+handler.help = ['acertijo']
+handler.tags = ['fun']
+handler.command = ['acertijo', 'adivinanza'];
 
 // Verificación de respuesta
 handler.before = async function(m) {
