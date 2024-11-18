@@ -22,7 +22,6 @@ await m.react('✖️')
 handler.help = ['play *<búsqueda>*']
 handler.tags = ['downloader']
 handler.command = ['play']
-//handler.register = true 
 export default handler
 
 async function search(query, options = {}) {
