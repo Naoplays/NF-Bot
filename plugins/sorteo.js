@@ -13,7 +13,7 @@ let k = Math.floor(Math.random() * 70);
 let x = `${pickRandom(['ㅤ'])}`
 let l = Math.floor(Math.random() * x.length);
 let vn = ``
-let top = `*${user(a)}* _Estás de suerte , acaba de ganar ${text} 😼💪🏻_
+let top = `*${user(a)}* 𝘚𝘶𝘦𝘳𝘵𝘦 𝘥𝘦 𝘗𝘳𝘪𝘯𝘤𝘪𝘱𝘪𝘢𝘯𝘵𝘦 𝘢𝘤𝘢𝘣𝘢𝘴 𝘥𝘦 𝘎𝘢𝘯𝘢𝘳: ${text} ☁️
 𝙎𝙄𝙎𝙆𝙀𝘿-𝘽𝙊𝙏.
 
 `
