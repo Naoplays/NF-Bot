@@ -30,12 +30,11 @@ const prompt = `${basePrompt}. Responde lo siguiente: ${query}`
 const response = await luminsesi(query, username, prompt)
 await conn.reply(m.chat, response, m, fake)
 } catch (error) {
-console.error('🌸 Error al obtener la respuesta:', error)
+console.error('❌ Error al obtener la respuesta:', error)
 await conn.reply(m.chat, 'Error: intenta más tarde.', m, fake)}}}
 
 handler.help = ['chatgpt <texto>', 'ia <texto>']
-handler.tags = ['ai']
-handler.register = false
+handler.tags = ['search']
 // handler.yenes = 1
 handler.command = ['ia', 'chatgpt']
 
