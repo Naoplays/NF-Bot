@@ -7,13 +7,13 @@ let handler = async (m, { conn: star, command, args, text, usedPrefix }) => {
     try {
     let res = await search(args.join(" "))
     let img = await (await fetch(`${res[0].image}`)).buffer()
-    let txt = '𝙔𝙤𝙪𝙏𝙪𝙗𝙚 𝙗𝙮 𝙎𝙞𝙨𝙠𝙚𝙙 \n\n'
-       txt += `*📄𝘛𝘪𝘵𝘶𝘭𝘰 :* ${res[0].title}\n`
-       txt += `*🕐 𝘋𝘶𝘳𝘢𝘤𝘪𝘰́𝘯 :* ${secondString(res[0].duration.seconds)}\n`
-       txt += `*📆 𝘗𝘶𝘣𝘭𝘪𝘤𝘢𝘥𝘰 :* ${eYear(res[0].ago)}\n`
-       txt += `*🖇️ 𝘊𝘢𝘯𝘢𝘭 :* ${res[0].author.name || 'Desconocido'}\n`
-       txt += `*𝘜𝘳𝘭 :* ${'https://youtu.be/' + res[0].videoId}\n\n`
-       txt += `☁️ 𝘙𝘦𝘴𝘱𝘰𝘯𝘥𝘦 𝘢 𝘦𝘴𝘵𝘦 𝘮𝘦𝘯𝘴𝘢𝘫𝘦 𝘤𝘰𝘯 *𝘈𝘶𝘥𝘪𝘰* 𝘰 *𝘝𝘪́𝘥𝘦𝘰.*`
+    let txt = 'ゲ◜៹ YouTube Search & Downloader ៹◞ゲ\n\n'
+       txt += `› Título : ${res[0].title}\n`
+       txt += `› Duración : ${secondString(res[0].duration.seconds)}\n`
+       txt += `› Publicado : ${eYear(res[0].ago)}\n`
+       txt += `› Canal : ${res[0].author.name || 'Desconocido'}\n`
+       txt += `› Url : ${'https://youtu.be/' + res[0].videoId}\n\n`
+       txt += `✧ responde a este mensaje con *Video* o *Audio*.`
 await star.sendFile(m.chat, img, 'thumbnail.jpg', txt, m)
 await m.react('✅')
 } catch {
@@ -22,6 +22,7 @@ await m.react('✖️')
 handler.help = ['play *<búsqueda>*']
 handler.tags = ['downloader']
 handler.command = ['play']
+//handler.register = true 
 export default handler
 
 async function search(query, options = {}) {
