@@ -12,7 +12,7 @@ let handler = async (m, { conn: star, command, args, text, usedPrefix }) => {
        txt += `*🕐 𝘋𝘶𝘳𝘢𝘤𝘪𝘰́𝘯 :* ${secondString(res[0].duration.seconds)}\n`
        txt += `*📆 𝘗𝘶𝘣𝘭𝘪𝘤𝘢𝘥𝘰 :* ${eYear(res[0].ago)}\n`
        txt += `*🖇️ 𝘊𝘢𝘯𝘢𝘭 :* ${res[0].author.name || 'Desconocido'}\n`
-       txt += `*🚩 𝘜𝘳𝘭 :* ${'https://youtu.be/' + res[0].videoId}\n\n`
+       txt += `*𝘜𝘳𝘭 :* ${'https://youtu.be/' + res[0].videoId}\n\n`
        txt += `☁️ 𝘙𝘦𝘴𝘱𝘰𝘯𝘥𝘦 𝘢 𝘦𝘴𝘵𝘦 𝘮𝘦𝘯𝘴𝘢𝘫𝘦 𝘤𝘰𝘯 *𝘈𝘶𝘥𝘪𝘰* 𝘰 *𝘝𝘪́𝘥𝘦𝘰.*`
 await star.sendFile(m.chat, img, 'thumbnail.jpg', txt, m)
 await m.react('✅')
