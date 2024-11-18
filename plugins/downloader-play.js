@@ -2,12 +2,12 @@ import fetch from 'node-fetch'
 import yts from 'yt-search'
 
 let handler = async (m, { conn: star, command, args, text, usedPrefix }) => {
-  if (!text) return star.reply(m.chat, '🍭 Ingresa el título de un video o canción de YouTube.', m)
+  if (!text) return star.reply(m.chat, '🚩 Ingresa el título de un video o canción de YouTube.', m)
     await m.react('🕓')
     try {
     let res = await search(args.join(" "))
     let img = await (await fetch(`${res[0].image}`)).buffer()
-    let txt = 'ゲ◜៹ YouTube Search & Downloader ៹◞ゲ\n\n'
+    let txt = '─ׄ─ׄ─⭒ YouTube Search & Downloader ⭒─ׄ─ׄ─\n\n'
        txt += `📄 *Titulo :* ${res[0].title}\n`
        txt += `🕐 *Duración :* ${secondString(res[0].duration.seconds)}\n`
        txt += `📆 *Publicado :* ${eYear(res[0].ago)}\n`
