@@ -33,10 +33,10 @@ const defaultMenu = {
 “ Saludos *%name* Te presento mi menú.”
 
  ⬣「 *Info User* 」⬣
-┃━ 〆 *👤 Nombre ∙* %name
-┃━ 〆 *🍬 Dulces ∙* %limit
-┃━ 〆 *⭐ XP ∙* %totalexp
-┃━ 〆 *⚡ Nivel ∙* %level
+┃ *👤 Nombre ∙* %name
+┃ *🍬 Dulces ∙* %limit
+┃ *💫 XP ∙* %totalexp
+┃ *🚩 Nivel ∙* %level
 %readmore
 ━ 〆 ━ 〆 ━ 〆 ━ 〆 ━ 〆 ━ 〆 ━ 〆
 
