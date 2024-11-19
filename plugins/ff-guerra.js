@@ -1,5 +1,5 @@
 let handler = async (m, { conn, participants, groupMetadata }) => {
-const pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './src/grupos.jpg' 
+const pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './src/siskedurl.jpg' 
 const groupAdmins = participants.filter(p => p.admin) 
 const listAdmin = groupAdmins.map((v, i) => `${i + 1}. @${v.id.split('@')[0]}`).join('\n')
 const owner = groupMetadata.owner || groupAdmins.find(p => p.admin === 'superadmin')?.id || m.chat.split`-`[0] + '@s.whatsapp.net'
@@ -7,7 +7,7 @@ let text =
 `
 ╭──────>⋆☽⋆ ⋆☾⋆<──────╮
 ㅤ   GUERRA DE CLANES
-        ${groupMetadata.subject}
+           ${groupMetadata.subject}
 ╰──────>⋆☽⋆ ⋆☾⋆<──────╯
 ╭──────────────╮
 │ㅤ⏱ 𝐇𝐎𝐑𝐀𝐑𝐈𝐎 
