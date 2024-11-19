@@ -6,8 +6,8 @@ const owner = groupMetadata.owner || groupAdmins.find(p => p.admin === 'superadm
 let text = 
 `
 ╭──────>⋆☽⋆ ⋆☾⋆<──────╮
-ㅤ   GUERRA DE CLANES
-           ${groupMetadata.subject}
+   ㅤ   GUERRA DE CLANES
+               ${groupMetadata.subject}
 ╰──────>⋆☽⋆ ⋆☾⋆<──────╯
 ╭──────────────╮
 │ㅤ⏱ 𝐇𝐎𝐑𝐀𝐑𝐈𝐎 
