@@ -30,14 +30,13 @@ const defaultMenu = {
   before: `
 *──ׅ─⭒─ׄ─ׄ─⭒─ׅ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׄ*
 
-“ hello *%name*, Cómo se encuentra el día de hoy? ”
+“ Saludos *%name* Te presento mi menú.”
 
-┏━━ ⬣「 *Info User* 」⬣
+ ⬣「 *Info User* 」⬣
 ┃━ 〆 *👤 Nombre ∙* %name
 ┃━ 〆 *🍬 Dulces ∙* %limit
 ┃━ 〆 *⭐ XP ∙* %totalexp
 ┃━ 〆 *⚡ Nivel ∙* %level
-┗━━━━━━ ⬣ ━━━━━━━
 %readmore
 ━ 〆 ━ 〆 ━ 〆 ━ 〆 ━ 〆 ━ 〆 ━ 〆
 
