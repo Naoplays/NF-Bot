@@ -9,15 +9,15 @@ let handler = async (m, { conn, usedPrefix, command}) => {
   let { min, xp, max } = xpRange(user.level, global.multiplier)
   let username = conn.getName(who)
   let prem = global.prems.includes(who.split`@`[0])
-  let txt = `╭─⬣「 *User Perfil* 」⬣\n`
-     txt += `│  ≡◦ *🪴 Nombre ∙* ${name}\n`
-     txt += `│  ≡◦ *🐢 Edad ∙* ${age} años\n`
+  let txt = `👤「 *User Perfil* 」⬣\n`
+     txt += `*🪴 Nombre ∙* ${name}\n`
+     txt += `*🐢 Edad ∙* ${age} años\n`
      
-     txt += `│  ≡◦ *📞 Numero ∙* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}\n`
-     txt += `│  ≡◦ *🍬 Dulces ∙* ${limit}\n`
-     txt += `│  ≡◦ *💫 Experiencia ∙* Total ${exp} ( *${user.exp - min}/${xp}* )\n`
-     txt += `│  ≡◦ *👑 Premium ∙* ${prem ? 'Si' : 'No'}\n`
-     txt += `╰─⬣`
+     txt += `*📞 Numero ∙* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}\n`
+     txt += `*🍬 Dulces ∙* ${limit}\n`
+     txt += `*💫 Experiencia ∙* Total ${exp} ( *${user.exp - min}/${xp}* )\n`
+     txt += `*👑 Premium ∙* ${prem ? 'Si' : 'No'}\n`
+     txt += `🚩`
 await conn.sendFile(m.chat, pp, 'thumbnail.jpg', txt, m)
 }
 handler.help = ['perfil', 'perfil @user']
