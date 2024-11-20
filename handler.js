@@ -92,8 +92,6 @@ export async function handler(chatUpdate) {
                     chat.bienvenida = true
                 if (!('modoadmin' in chat)) 
                     chat.modoadmin = false
-                if (!('sBye' in chat)) 
-                    chat.sBye = ''
                 if (!('detect' in chat)) 
                     chat.detect = true
                 if (!('audios' in chat))
@@ -113,7 +111,6 @@ export async function handler(chatUpdate) {
                     isBanned: false,
                     bienvenida: true,
                     modoadmin: false,
-                    sBye: '',
                     detect: true,
                     audios: false,
                     antiLink: false,
