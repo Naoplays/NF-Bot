@@ -9,7 +9,7 @@ let img = catalogo
     forwardedNewsletterMessageInfo: {
       newsletterJid: "120363299667225383@newsletter",
       serverMessageId: 100,
-      newsletterName: '𝑺𝑰𝑺𝑲𝑬𝑫-𝑩𝑶𝑻',
+      newsletterName: '「  𝑺𝑰𝑺𝑲𝑬𝑫 - 𝑪𝑯𝑨𝑵𝑬𝑳  」',
     },
 	    externalAdReply: {
 				    showAdAttribution: true,
@@ -52,11 +52,11 @@ isForwarded: true,
 forwardedNewsletterMessageInfo: {
 newsletterJid: "120363299667225383@newsletter",
 serverMessageId: 100,
-newsletterName: '𝑺𝑰𝑺𝑲𝑬𝑫-𝑩𝑶𝑻',
+newsletterName: '「  𝑺𝑰𝑺𝑲𝑬𝑫 - 𝑪𝑯𝑨𝑵𝑬𝑳  」',
 },
 externalAdReply: { 
 showAdAttribution: true,
-title: '𝑺𝑰𝑺𝑲𝑬𝑫-𝑩𝑶𝑻',
+title: '𝙎𝙄𝙎𝙆𝙀𝘿 𝘽𝙊𝙏',
 body: 'Super Bot de WhatsApp ⭐',
 previewType: "PHOTO",
 thumbnailUrl: 'https://i.ibb.co/qBxdwZW/file.jpg',
