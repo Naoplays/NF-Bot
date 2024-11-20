@@ -31,7 +31,6 @@ const handler = async (m, { conn, args }) => {
     𝐇𝐎𝐑𝐀𝐑𝐈𝐎
     🇲🇽 𝐌𝐄𝐗 : ${horaUsuario}
     🇨🇴 𝐂𝐎𝐋 : ${horaAdelantada}
-    𝐇𝐎𝐑𝐀 𝐀𝐂𝐓𝐔𝐀𝐋: ${horaActual}
     𝐂𝐎𝐋𝐎𝐑 𝐃𝐄 𝐑𝐎𝐏𝐀: ${colorRopa}
 
     ¬ 𝐉𝐔𝐆𝐀𝐃𝐎𝐑𝐄𝐒 𝐏𝐑𝐄𝐒𝐄𝐍𝐓𝐄𝐒
@@ -59,5 +58,5 @@ const handler = async (m, { conn, args }) => {
 };
 handler.help = ['8vs8']
 handler.tags = ['freefire']
-handler.command = /^(8vs8|vs8|8v8|tucola)$/i;
+handler.command = /^(8vs8|vs8|8v8)$/i;
 export default handler;
