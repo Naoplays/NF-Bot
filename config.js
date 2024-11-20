@@ -35,7 +35,7 @@ global.wait = '𝙎𝙄𝙎𝙆𝙀𝘿 𝘽𝙊𝙏'
 global.botname = '𝙎𝙄𝙎𝙆𝙀𝘿 𝘽𝙊𝙏'
 global.textbot = `Super Bot De WhatsApp ⭐`
 global.listo = 'Completado ✯'
-global.namechannel = '𝑺𝑰𝑺𝑲𝑬𝑫 𝑩𝑶𝑻'
+global.namechannel = '「  𝑺𝑰𝑺𝑲𝑬𝑫 - 𝑪𝑯𝑨𝑵𝑬𝑳  」'
 global.baileys = '@whiskeysockets/baileys'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
