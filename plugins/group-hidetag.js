@@ -1,7 +1,6 @@
 import {generateWAMessageFromContent} from '@whiskeysockets/baileys';
 import * as fs from 'fs';
 const handler = async (m, {conn, text, participants, isOwner, isAdmin}) => {
-  m.react('⚡')
   try {
     const users = participants.map((u) => conn.decodeJid(u.id));
     const q = m.quoted ? m.quoted : m || m.text || m.sender;
