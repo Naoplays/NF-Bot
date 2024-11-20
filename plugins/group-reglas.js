@@ -4,9 +4,11 @@ let handler = async (m, { conn }) => {
             let reglas = chat.sRules;
             m.reply(reglas);
         } else {
-            m.reply('No hay reglas configuradas para este grupo');
+            m.reply('𝙀𝙡 𝙜𝙧𝙪𝙥𝙤 𝙣𝙤 𝙩𝙞𝙚𝙣𝙚 𝙧𝙚𝙜𝙡𝙖𝙨');
         }
 }
-handler.command = ['reglas', 'rules']
+handler.help = ['reglas']
+handler.tags = ['group']
+handler.command = ['reglas']
 handler.group = true
 export default handler
