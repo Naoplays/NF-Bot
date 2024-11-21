@@ -24,6 +24,6 @@ global.db.data.users[m.sender].lastcofre = new Date * 1
 }
 handler.help = ['cuadrilatero']
 handler.tags = ['freefire']
-handler.command = ['cuadrilatero' ,'cuadri'] 
+handler.command = ['cuadrilatero'] 
 handler.admin = true
 export default handler
