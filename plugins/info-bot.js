@@ -12,6 +12,14 @@ if (/^.bermuda/i.test(m.text)) {
 conn.reply(m.chat, `*Mapa Eligido Bermuda 🐉*`, m, rcanal, )
 }
 
+if (/^.hexagonal/i.test(m.text)) {
+conn.reply(m.chat, `𝙈𝙖𝙥𝙖 𝙀𝙡𝙚𝙜𝙞𝙙𝙤 𝙃𝙚𝙭𝙖𝙜𝙤𝙣𝙖𝙡 🐉`, m, rcanal, )
+}
+
+if (/^.cuadrilatero/i.test(m.text)) {
+conn.reply(m.chat, `𝙈𝙖𝙥𝙖 𝙀𝙡𝙚𝙜𝙞𝙙𝙤 𝘾𝙪𝙖𝙙𝙧𝙞𝙡𝙖𝙩𝙚𝙧𝙤 🐉`, m, rcanal, )
+}
+
 if (/^.alpes/i.test(m.text)) {
 conn.reply(m.chat, `*Mapa Eligido Alpes 🐉*`, m, rcanal, )
 }
