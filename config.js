@@ -11,6 +11,7 @@ import moment from 'moment-timezone'
 
 global.owner = [
   ['584123989549', 'Sisked 🚩⁩', true],
+  ['5216122294403' 'Jana', true],
 ]
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
@@ -29,13 +30,13 @@ global.APIKeys = { // APIKey Here
    
 //*Sisked Good Datos*
 
-global.packname = `𝙎𝙄𝙎𝙆𝙀𝘿 𝘽𝙊𝙏`
-global.author = '{\n "bot": {\n   "name": "𝙎𝙄𝙎𝙆𝙀𝘿 𝘽𝙊𝙏",\n     "author": "Anuar",\n   "status_bot": "active"\n }\n}'
-global.wait = '𝙎𝙄𝙎𝙆𝙀𝘿 𝘽𝙊𝙏'
-global.botname = '𝙎𝙄𝙎𝙆𝙀𝘿 𝘽𝙊𝙏'
-global.textbot = `Super Bot De WhatsApp ⭐`
+global.packname = `🔱𝕷𝖚𝖓𝖎𝖙𝖆 𝕭𝖔𝖙 🔱`
+global.author = '{\n "bot": {\n   "name": "🔱𝕷𝖚𝖓𝖎𝖙𝖆 𝕭𝖔𝖙 🔱",\n     "author": "Jana",\n   "status_bot": "active"\n }\n}'
+global.wait = '🔱𝕷𝖚𝖓𝖎𝖙𝖆 𝕭𝖔𝖙 🔱'
+global.botname = '🔱𝕷𝖚𝖓𝖎𝖙𝖆 𝕭𝖔𝖙 🔱'
+global.textbot = `Powered By Jana`
 global.listo = 'Completado ✯'
-global.namechannel = '「  𝑺𝑰𝑺𝑲𝑬𝑫 - 𝑪𝑯𝑨𝑵𝑬𝑳  」'
+global.namechannel = '🔱𝕷𝖚𝖓𝖎𝖙𝖆 𝕭𝖔𝖙 🔱'
 global.baileys = '@whiskeysockets/baileys'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
@@ -45,8 +46,8 @@ global.siskedurl = fs.readFileSync('./storage/img/siskedurl.jpg')
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.group = 'https://chat.whatsapp.com/CTaspTXla9T1zA83m6ZKPe'
-global.canal = 'https://whatsapp.com/channel/0029Vak6H9l3GJP4FJH5063R'
+global.group = 'https://chat.whatsapp.com/Kum8zS1Fv4Z4KfExgBoxdQ'
+global.canal = 'https://whatsapp.com/channel/0029VasT86kE50Ue49C4N72D'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
