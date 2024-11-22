@@ -28,28 +28,29 @@ let tags = {
 
 const defaultMenu = {
   before: `
-*──ׅ─⭒─ׄ─ׄ─⭒─ׅ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׄ*
+*ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩*
 
-“ Saludos *%name* Te presento mi menú.”
+“ Holi *%name*, Soy 🔱𝕷𝖚𝖓𝖎𝖙𝖆 𝕭𝖔𝖙 🔱 ”
 
- ⬣「 *Info User* 」⬣
-┃ *👤 Nombre ∙* %name
-┃ *🍬 Dulces ∙* %limit
-┃ *💫 XP ∙* %totalexp
-┃ *🚩 Nivel ∙* %level
+╭──⬣「 *Info User* 」⬣
+│  ≡◦ *🧸 Nombre ∙* %name
+│  ≡◦ *🍬 Dulces ∙* %limit
+│  ≡◦ *🦋 XP ∙* %totalexp
+│  ≡◦ *🌸 Nivel ∙* %level
+╰──⬣
 %readmore
-━ 〆 ━ 〆 ━ 〆 ━ 〆 ━ 〆 ━ 〆 ━ 〆
+*꒷꒦꒷꒷꒦꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒷꒦꒷꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷*
 
-\t\t\t𝐒 𝐈 𝐒 𝐊 𝐄 𝐃 - 𝐌 𝐄 𝐍 𝐔́
+\t\t\t*L I S T A  -  M E N Ú S*
 `.trimStart(),
-header: '「 *%category* 」',
-body: '┃━ 〆 *%cmd*\n',
-footer: '──ׅ─⭒─ׄ─ׄ─⭒─ׅ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׄ\n',
+header: '╭──🦋「 *%category* 」🦋',
+body: '│  ≡◦ *%cmd*\n',
+footer: '╰──🧸\n',
 after: '',
 }
 
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
-  m.react('⭐')
+  m.react('🔱')
   try {
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
     let { exp, limit, level } = global.db.data.users[m.sender]
