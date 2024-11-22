@@ -7,9 +7,9 @@ let img = catalogo
     contextInfo: {
     	isForwarded: true,
     forwardedNewsletterMessageInfo: {
-      newsletterJid: "120363299667225383@newsletter",
+      newsletterJid: "120363330435459133@newsletter",
       serverMessageId: 100,
-      newsletterName: '「  𝑺𝑰𝑺𝑲𝑬𝑫 - 𝑪𝑯𝑨𝑵𝑬𝑳  」',
+      newsletterName: '🔱𝕷𝖚𝖓𝖎𝖙𝖆 𝕭𝖔𝖙 🔱',
     },
 	    externalAdReply: {
 				    showAdAttribution: true,
@@ -50,28 +50,19 @@ global.rcanal = {
 contextInfo: {
 isForwarded: true,
 forwardedNewsletterMessageInfo: {
-newsletterJid: "120363299667225383@newsletter",
+newsletterJid: "120363330435459133@newsletter",
 serverMessageId: 100,
-newsletterName: '「  𝑺𝑰𝑺𝑲𝑬𝑫 - 𝑪𝑯𝑨𝑵𝑬𝑳  」',
+newsletterName: '🔱𝕷𝖚𝖓𝖎𝖙𝖆 𝕭𝖔𝖙 🔱',
 },
 externalAdReply: { 
 showAdAttribution: true,
-title: '𝙎𝙄𝙎𝙆𝙀𝘿 𝘽𝙊𝙏',
-body: 'Super Bot de WhatsApp ⭐',
+title: '🔱𝕷𝖚𝖓𝖎𝖙𝖆 𝕭𝖔𝖙 🔱',
+body: 'Powered By Jana',
 previewType: "PHOTO",
-thumbnailUrl: 'https://i.ibb.co/qBxdwZW/file.jpg',
-sourceUrl: 'https://www.instagram.com/sisked_1',
+thumbnailUrl: 'https://i.ibb.co/VmnW0YX/file.jpg',
+sourceUrl: 'https://www.instagram.com/jana__loreto',
 mediaType: 1,
 renderLargerThumbnail: false
 },},}
 	
 }
-
-global.icono = [ 
-'https://ibb.co/gr17SSM',
-'https://ibb.co/gr17SSM',
-'https://ibb.co/gr17SSM',
-'https://ibb.co/gr17SSM',
-'https://ibb.co/gr17SSM',
-'https://ibb.co/gr17SSM',
-].getRandom()
