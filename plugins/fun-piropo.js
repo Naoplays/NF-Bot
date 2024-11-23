@@ -1,7 +1,7 @@
 /* By Sisked */
 
 const handler = async (m, {conn, text}) => {
-  m.reply(`*➢ "${pickRandom(global.piropo)}"*\n\n🔱𝕷𝖚𝖓𝖎𝖙𝖆 𝕭𝖔𝖙 🔱`);
+  m.reply(`*➢ "${pickRandom(global.piropo)}"*\n\n⟢ 𝐍𝐅 𝐁𝐎𝐓`);
 };
 handler.help = ['piropo']
 handler.tags = ['fun'];
