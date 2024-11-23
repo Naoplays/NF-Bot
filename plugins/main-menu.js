@@ -30,7 +30,7 @@ const defaultMenu = {
   before: `
 *ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩ᡣ𐭩*
 
-“ Holi *%name*, Soy 🔱𝕷𝖚𝖓𝖎𝖙𝖆 𝕭𝖔𝖙 🔱 ”
+“ Holi *%name*, Soy ⟢ 𝐍𝐅 𝐁𝐎𝐓 ”
 
 ╭──⬣「 *Info User* 」⬣
 │  ≡◦ *🧸 Nombre ∙* %name
@@ -50,7 +50,7 @@ after: '',
 }
 
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
-  m.react('🔱')
+  m.react('❤️')
   try {
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
     let { exp, limit, level } = global.db.data.users[m.sender]
