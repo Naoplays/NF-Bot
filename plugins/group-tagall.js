@@ -10,13 +10,13 @@ const handler = async (m, {isOwner, isAdmin, conn, text, participants, args, com
   }
   const pesan = args.join` `;
   const oi = `${pesan}`;
-  let teks = `🔱𝕷𝖚𝖓𝖎𝖙𝖆 𝕭𝖔𝖙 🔱\n\n *Integrantes :  ${participants.length}* ${oi}\n\n┌──⭓ Plantas 🌱\n`;
+  let teks = `⟢ 𝐍𝐅 𝐁𝐎𝐓\n\n *Integrantes :  ${participants.length}* ${oi}\n\n┌──⭓ Plantas 🌱\n`;
   for (const mem of participants) {
-    teks += `🔱 @${mem.id.split('@')[0]}\n`;
+    teks += `🌱 @${mem.id.split('@')[0]}\n`;
   }
   teks += `└───────⭓`;
   conn.sendMessage(m.chat, {text: teks, mentions: participants.map((a) => a.id)} );
-  m.react('🔱') 
+  m.react('🌱') 
 };
 handler.help = ['todos'];
 handler.tags = ['group'];
