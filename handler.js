@@ -451,7 +451,7 @@ global.dfail = (type, m, conn, usedPrefix) => {
         private: `⚕️ Hola, este comando solo puede ser utilizado en mi Chat *Privado*.`,
         admin: `⭐ No, este comando solo puede ser utilizado por los *Administradores* del Grupo.`,
         botAdmin: `🚩 Antes, El bot debe ser *Administrador* para ejecutar este Comando.`,
-        unreg: `🤚🏻 Espera, Para Usar Este Comando Debes Estar *Registrado.*\n\nUtiliza: */reg nombre.edad*\n\n> Ejemplo: /reg Luna.17`,
+        unreg: `🤚🏻 Espera, Para Usar Este Comando Debes Estar *Registrado.*\n\nUtiliza: */reg nombre.edad*\n\n> Ejemplo: /reg Nao.17`,
         restrict: `⚠️ Esta Característica Está *Deshabilitada.*`  
     }[type]
     if (msg) return conn.reply(m.chat, msg, m, rcanal).then(_ => m.react('✖️'))
