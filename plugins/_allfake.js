@@ -7,9 +7,9 @@ let img = catalogo
     contextInfo: {
     	isForwarded: true,
     forwardedNewsletterMessageInfo: {
-      newsletterJid: "120363330435459133@newsletter",
+      newsletterJid: "120363331651095623@newsletter",
       serverMessageId: 100,
-      newsletterName: '🔱𝕷𝖚𝖓𝖎𝖙𝖆 𝕭𝖔𝖙 🔱',
+      newsletterName: '⟢ 𝐍𝐅 𝐁𝐎𝐓',
     },
 	    externalAdReply: {
 				    showAdAttribution: true,
@@ -50,17 +50,17 @@ global.rcanal = {
 contextInfo: {
 isForwarded: true,
 forwardedNewsletterMessageInfo: {
-newsletterJid: "120363330435459133@newsletter",
+newsletterJid: "120363331651095623@newsletter",
 serverMessageId: 100,
-newsletterName: '🔱𝕷𝖚𝖓𝖎𝖙𝖆 𝕭𝖔𝖙 🔱',
+newsletterName: '⟢ 𝐍𝐅 𝐁𝐎𝐓',
 },
 externalAdReply: { 
 showAdAttribution: true,
-title: '🔱𝕷𝖚𝖓𝖎𝖙𝖆 𝕭𝖔𝖙 🔱',
-body: 'Powered By Jana',
+title: '⟢◦ 𝐍𝐅 𝐁𝐎𝐓',
+body: 'Powered By Nao',
 previewType: "PHOTO",
-thumbnailUrl: 'https://i.ibb.co/VmnW0YX/file.jpg',
-sourceUrl: 'https://www.instagram.com/jana__loreto',
+thumbnailUrl: 'https://i.ibb.co/zhDtxyt/file.jpg',
+sourceUrl: 'https://www.instagram.com/san.rio__.shopp',
 mediaType: 1,
 renderLargerThumbnail: false
 },},}
