@@ -36,6 +36,19 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       chat.modoadmin = isEnable          
       break
 
+      case 'antifake':
+      case 'antifakes':
+      case 'antiarabes':
+      case 'antiarab':
+      if (m.isGroup) {
+      if (!(isAdmin || isOwner)) {
+      global.dfail('admin', m, conn)
+      throw false
+      }
+      }
+      chat.onlyLatinos = isEnable
+      break
+
       case 'detect': case 'avisos':
       if (!m.isGroup) {
       if (!isOwner) {
