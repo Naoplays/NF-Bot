@@ -1,15 +1,26 @@
-import Scraper from '@SumiFX/Scraper'
+import fetch from 'node-fetch'
 
-let handler = async (m, { conn, args, usedPrefix, command }) => {
-if (!args[0]) return m.reply('⭐ Ingresa el enlace del vídeo de Instagram junto al comando.\n\n`Ejemplo:`\n' + `> *${usedPrefix + command}* https://www.instagram.com/reel/CijhxhAD53X/?igsh=amJqMDQ1cW9zOG9s`)
-
+let handler = async (m, { conn, usedPrefix, command, args }) => {
+if (!args[0]) return m.reply(`Ingresa un enlace de Instagram`)
+    
 try {
-let { dl_url } = await Scraper.igdl(args[0])
-await conn.sendMessage(m.chat, { video: { url: dl_url }, caption: null }, { quoted: m})
-} catch {
+let api = await fetch(`https://deliriussapi-oficial.vercel.app/download/instagram?url=${args[0]}`)
+let json = await api.json()
+let { data } = json
+let JT = data
+for (let i = 0; i < JT.length; i++) {
+let HFC = JT[i];
+if (HFC.type === "image") {
+await conn.sendMessage(m.chat, { image: { url: HFC.url } }, { quoted: m })
+} else if (HFC.type === "video") {
+await conn.sendMessage(m.chat, { video: { url: HFC.url } }, { quoted: m })
 }}
-handler.help = ['instagram <url ig>']
+} catch (error) {
+console.error(error)
+}}
+
+handler.help = ['instagram < Link >']
 handler.tags = ['downloader']
-handler.command = ['ig', 'igdl', 'instagram']
-//handler.limit = 1
+handler.command = /^(igdl|ig|instagramdl|instagram)$/i
+
 export default handler
