@@ -131,5 +131,4 @@ global.db.data.users[m.sender].lastcofre = new Date * 1
 handler.help = ['menu2']
 handler.tags = ['main', 'audio'] 
 handler.command = ['menu2', 'menuaudios'] 
-handler.register = true
 export default handler
