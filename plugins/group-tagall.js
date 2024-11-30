@@ -1,4 +1,13 @@
 const handler = async (m, {isOwner, isAdmin, conn, text, participants, args, command}) => {
+
+let chat = global.db.data.chats[m.chat]
+let emoji = '';
+if (chat.emojiTag) {
+emoji = chat.emojiTag;
+} else {
+emoji = '⟢';
+}
+
   if (!(isAdmin || isOwner)) {
     global.dfail('admin', m, conn);
     throw false;
@@ -10,13 +19,13 @@ const handler = async (m, {isOwner, isAdmin, conn, text, participants, args, com
   }
   const pesan = args.join` `;
   const oi = `${pesan}`;
-  let teks = `⟢ 𝐍𝐅 𝐁𝐎𝐓\n\n *Integrantes :  ${participants.length}* ${oi}\n\n┌──⭓ Plantas 🌱\n`;
+  let teks = `⟢ 𝐍𝐅 𝐁𝐎𝐓\n\n *Integrantes :  ${participants.length}* ${oi}\n\n┌──⭓ activense 🌹\n`;
   for (const mem of participants) {
-    teks += `🌱 @${mem.id.split('@')[0]}\n`;
+    teks += `${emoji} @${mem.id.split('@')[0]}\n`;
   }
   teks += `└───────⭓`;
   conn.sendMessage(m.chat, {text: teks, mentions: participants.map((a) => a.id)} );
-  m.react('🌱') 
+  
 };
 handler.help = ['todos'];
 handler.tags = ['group'];
